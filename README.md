@@ -1,8 +1,15 @@
 
 # .Net_PB
-A comunidade .NET_PB, tem como foco principal promover o networking e a troca de conhecimento. Quer conhecer mais sobre a plataforma .NET e outras assuntos, seja você também um membro da comunidade .Net_PB.
- 
-Obtenha acesso ao slack do GrudePB via https://grudepb.herokuapp.com/; com o acesso, entre no canal #dot-net, nosso principal meio de comunicação
+A comunidade .NET_PB, tem como foco principal promover o networking e a troca de conhecimento. Quer conhecer mais sobre a plataforma .NET e outras assuntos, seja você também um membro da comunidade .Net_PB, veja como:
+1) Obtenha acesso ao 
+slack do GrudePB* via
+https://grudepb.herokuapp.com/
+
+2) Acesse o slack do GrudePB
+
+3) Entre no canal #dot-net
+
+* GrudePB: Grupo de Desenvolvedores da Paraíba
 
 
 # GrudePB
