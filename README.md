@@ -5,9 +5,7 @@ A comunidade .NET_PB, tem como foco principal promover o networking e a troca de
 2. Acesse o slack do GrudePB
 3. Entre no canal #dot-net
 
-`*` Grupo de Desenvolvedores da Paraíba
-
-# GrudePB
+# _Grupo de Desenvolvedores da Paraíba_ - GrudePB
 
 > Site do GrudePB - Grupo de Desenvolvedores da Paraíba  
 > [grudepb.info](http://grudepb.info)
