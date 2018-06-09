@@ -55,7 +55,7 @@
     
   
   <div class="wrapper">
-    <section class="cd-timeline js-cd-timeline">
+    <section >
       <div id="title">
         <h1>.NET_PB Timeline</h1>
         <hr>
@@ -66,6 +66,7 @@
           <a href="https://twitter.com/michigangraham">mattgraham</a>
         </span>
       </div>
+      <div class="cd-timeline js-cd-timeline">
 
       <div class="cd-timeline__container">
         <div class="cd-timeline__block js-cd-block">
@@ -75,21 +76,25 @@
           <!-- cd-timeline__img -->
 
           <div class="cd-timeline__content js-cd-content">
-            <h2>3o .NET_PB Meetup</h2>
-            <p>Dessa vez que acolherá a comunidade será a 
+            <h2>3o .NET_PB Meetup</h2>                        
+            
+            <p>
+              Restam <i><b id="temporizador"></b> </i> para este evento ocorrer.<BR>
+              Dessa vez que acolherá a comunidade será a 
               <a href="https://www.fpb.edu.br/" target="_blank">
                 FPB
               </a>.<BR>
-              <i class="fa fa-hand-o-down"></i> Acesse o mapa lendo o 
+              <i class="fa fa-hand-o-down"></i> Acesse o mapa do evento lendo o 
               <a href="http://g1.globo.com/tecnologia/noticia/2011/05/entenda-o-que-sao-os-qr-codes-codigos-lidos-pelos-celulares.html" target="_blank">              
                 QR Code
               </a>
               abaixo.
+              
             </p>
             <a href="/mapa.html" target="_blank">
               <img src="img/3omeetupQRCodeParaMapa.JPG">
             </a>
-            <span class="cd-timeline__date">29/06/2018</span>
+            <span class="cd-timeline__date">29/06</span>
           </div>
           <!-- cd-timeline__content -->
         </div>
@@ -105,7 +110,7 @@
             <h2>2o Meetup .NET_PB</h2>
             <p>Realizado na <a href="http://www.iesp.edu.br/" target="_blank">IESP Faculdades</a>.</p>            
             <img src="img/2omeetupcollage.jpg">
-            <span class="cd-timeline__date">25/05/2018</span>
+            <span class="cd-timeline__date">25/05</span>
           </div>
           <!-- cd-timeline__content -->
         </div>
@@ -121,7 +126,7 @@
             <h2>1o Meetup da comunidade .NET_PB</h2>
             <p>Realizado na <a href="http://www.estacio.br/" target="_blank">Faculdade Estácio da Paraíba</a>.</p>
             <img src="img/1omeetupcollage.jpg">
-            <span class="cd-timeline__date">27/03/2018</span>
+            <span class="cd-timeline__date">27/03</span>
           </div>
           <!-- cd-timeline__content -->
         </div>
@@ -137,12 +142,13 @@
             <h2>RoadSec</h2>
             <p>Realizado no <a href="http://tce.pb.gov.br/" target="_blank">Tribunal de Contas do Estado da Paraíba</a> durante o <a href="http://roadsec.com.br/joaopessoa2018/" target="_blank"><i>RoadSec João Pessoa 2018.</i></a></p>
             <img src="img/roadseccollage.jpg">
-            <span class="cd-timeline__date">24/02/2018</span>
+            <span class="cd-timeline__date">24/02</span>
           </div>
           <!-- cd-timeline__content -->
         </div>
         <!-- cd-timeline__block -->
       </div>
+    </div>
     </section>
   </div>
   <!-- cd-timeline -->
@@ -150,7 +156,37 @@
   <script src="js/main.js"></script>
   <!-- Resource JavaScript -->
 
-
+  <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jun 19, 2018 19:00:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+          // Get todays date and time
+          var now = new Date().getTime();
+          
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+          
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+          // Output the result in an element with id="temporizador"
+          document.getElementById("temporizador").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+          
+          // If the count down is over, write some text 
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("temporizador").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      </script>
+  
 </body>
 
 </html>
