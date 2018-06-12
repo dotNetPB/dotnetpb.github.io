@@ -1,0 +1,30 @@
+body {
+  font-size: 1.6rem;
+  font-family: "Droid Serif", serif;
+  background-color: white;
+}
+
+.box{
+  position:relative;
+}
+
+
+h1 {
+  background-color: rgba(5,4,2,0.1);
+  margin-left:auto;
+  margin-right:auto;
+  padding: 15px; 
+}
+
+
+
+.img-title{
+  position: absolute;
+  color: black;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 10%;
+  letter-spacing: 3px;
+}
+
